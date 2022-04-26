@@ -54,8 +54,14 @@ paymentRouter.get('/:id', (req, res) => {
     })
 })
 
+paymentRouter.delete('/:id', (req, res) => {
+    Payment.findByIdAndDelete(req.params.id, (err, deletedPayment) => {
+        res.redirect('/payments')
+    })
+})
+
 // edit a payment route
-paymentRouter.put('/:id/edit', (req, res) => {
+paymentRouter.get('/:id/edit', (req, res) => {
     Payment.findById(req.params.id, (err, payment) => {
         res.render('edit.ejs',{payment})
     })

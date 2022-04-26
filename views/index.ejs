@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
+    <link href="/public/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 </head>
-<nav> 
-    <a href="/payments/new">Send Money</a>
-</nav>
+<div class="title"><h1>PayMe</h1></div>
 
-<body>
+<div class="nav">
+        <a href="/payments/new">Send Money</a>
+</div>
+
+<body class="body">
+    <div class="container">
     <% payments.forEach(payment => { %>
         <h2><%= payment.sender%> paid <%= payment.receiver %> $ <%=payment.amount%></h2>
-        <a href="/payments/<%=payment._id%>" > View Details </a>
+        <a href="/payments/<%=payment._id%>" > View Details </a> <br>
+        <a href="/payments/<%=payment._id%>/edit">Edit this payment</a>
+        <form action="/payments/<%=payment._id%>?_method=DELETE" method="POST">
+            <input type="submit" value="Refund">
+        </form>
     <%})%>
+    </div>
 </body>
 </html>

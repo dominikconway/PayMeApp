@@ -1,0 +1,32 @@
+* {border: 5px solid red}
+
+.title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.nav {
+    text-align: center;
+}
+
+.body {
+    background-color: steelblue;
+    background-image: url('https://i.imgur.com/rSkVG9g.png');
+    background-repeat: no-repeat;
+}
+
+.container {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(161,202,241);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    line-height: 1em;
+}
+
+    
