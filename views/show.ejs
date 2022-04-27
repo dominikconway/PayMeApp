@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page/ Show</title>
     <link href="/public/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h2><%=payment.note%></h2>
+</head>
+<h2 class="payDetails">PayDetails</h2>
+
+<body class="body">
+    <div class="container">
+    <h2 class="payWho"><%=payment.note%></h2>
     <a href="/payments/">return to payment</a>
+</div>
 </body>
+
 </html>

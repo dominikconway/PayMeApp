@@ -1,4 +1,4 @@
-* {border: 5px solid red}
+
 
 .title {
     font-family: 'Kanit', sans-serif;
@@ -9,6 +9,15 @@
 
 .nav {
     text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(161,202,241);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    line-height: 1em;
+    font-size: 40px;
 }
 
 .body {
@@ -28,5 +37,49 @@
     padding: 10px;
     line-height: 1em;
 }
+/* /* New payment form  */
+.payWho {
+    font-size: 60px;
+}
+
+.payDetails {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.formBody {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'kanit' , sans-serif;
+    font-size: 16px;
+    background-color: steelblue;
+    background-image: url('https://i.imgur.com/rSkVG9g.png');
+    background-repeat: no-repeat;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+}
+
+
 
     

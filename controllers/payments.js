@@ -69,7 +69,7 @@ paymentRouter.get('/:id/edit', (req, res) => {
 
 paymentRouter.put('/:id', (req, res) => {
     Payment.findByIdAndUpdate(req.params.id, req.body, (err, updatedPayment) => {
-        res.redirect(`/payments/${req.params.id}`)
+        res.redirect(`/payments/`)
     })
 })
 

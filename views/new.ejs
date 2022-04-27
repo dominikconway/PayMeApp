@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new payment page</title>
     <link href="/public/styles.css" rel="stylesheet" type="text/css">
+    <link href="/public/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 </head>
-<body>
+<h1 class="payWho">PayWho?</h1>
+<body class="formBody">
     <form action="/payments" method="POST">
-        Sender: <input type="text" name="sender">
-        Receiver: <input type="text" name="receiver">
-        Amount: <input type="number" name="amount">
-        Note: <input type="text" name="note">
+        <input type="text" name="sender" placeholder="Who is sending the Payment?">
+        <input type="text" name="receiver" placeholder="Who is receiving the Payment?">
+        <input type="number" name="amount" placeholder="How much are you sending?">
+        <input type="text" name="note" placeholder="Would you like to leave a note?">
         <input type="submit" value="Add a payment">
     </form>
 </body>
