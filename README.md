@@ -23,6 +23,10 @@ This App May be used for sending payments to family and friends. Simply type in 
 ***
 ![Submitting a payment](https://i.imgur.com/9KLhnvQ.png)
 
+### Payment Details view
+***
+![Payment Details](https://i.imgur.com/kO9uzav.png)
+
 ### With New Payment Added
 
 ![After submitting a payment](https://i.imgur.com/gc93i85.png)
