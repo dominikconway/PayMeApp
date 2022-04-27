@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const paymentsController = require('./controllers/payments.js')
 const app = express()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || '3000'
 
 // middleware
 app.use(express.urlencoded({extended: true}))
