@@ -12,6 +12,32 @@ This App May be used for sending payments to family and friends. Simply type in 
 - Heroku
 - Google Fonts
 
+## Routes Table
+***
+| Route Name|   URL            | HTTP | Description|
+| ----------|----------------- |------|------------|
+| Index     |/payments         |  GET | Displays all payments|
+| New       |/payments/new     |  GET | creates a new payment|
+| Create    |/payments/create  |  POST| post a new payment to the index page|
+| Show      |/payments/:id     |  GET | views payment details|
+| Edit      |/payments/:id/edit|  GET | edits the selected payment|
+| Update    |/payments/:id     |  PUT | updates the edited payment|
+| Destroy   |/payments/:id     |  DELETE| deletes the selected payment|
+
+## Model Schema Table
+***
+    |          |                |                 | 
+    |----------|----------------|-----------------|
+    | sender   | type: String   | required: true  | 
+    | receiver | type: String   | required: true  |
+    | amount:  | type: Number   |required: true   |
+    | note:    | type: String   |required: true   |
+
+##  Original WireFrame
+***
+![original wireframe design](https://i.imgur.com/Yj4eGXb.png)
+
+
 # Screenshots
 ***
 
